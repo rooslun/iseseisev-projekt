@@ -1,4 +1,6 @@
 # iseseisev-projekt
+
+* Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevad: 20. mai - 22. mai.
 Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
 
 Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
