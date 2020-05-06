@@ -1,6 +1,6 @@
 # iseseisev-projekt
 
-* Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevadeks: 1 nädal peale ÕISis valitud arvestuse kuupäeva - kindlasti tuleb arvestusele registreerida. Projektide esitlemine toimub:
+Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevadeks: 1 nädal peale ÕISis valitud arvestuse kuupäeva - kindlasti tuleb arvestusele registreerida. Projektide esitlemine toimub:
 1. 19.05.2020 kell 16:15-17:45 zoomis
 1. 21.05.2020 kell 08.15-09:45 zoomis
 1. 22.05.2020 kell 08.15-09:45 zoomis
