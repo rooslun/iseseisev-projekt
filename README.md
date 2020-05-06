@@ -1,6 +1,11 @@
 # iseseisev-projekt
 
-* Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevad: 20. mai - 22. mai.
+* Tähtaeg - 1 päev enne esitlust. Esitluse kuupäevadeks: 1 nädal peale ÕISis valitud arvestuse kuupäeva - kindlasti tuleb arvestusele registreerida. Projektide esitlemine toimub:
+1. 19.05.2020 kell 16:15-17:45 zoomis
+1. 21.05.2020 kell 08.15-09:45 zoomis
+1. 22.05.2020 kell 08.15-09:45 zoomis
+1. Järelarvestus - 02.06.2020 kell 16:15-17:45 ruumis A-406 (või vajadusel zoomis)
+
 Eesrakenduste arendamise iseseisva projekti lähteülesanne. 
 
 Töö võib teha teha 1-4 liikmelise meeskonnana. Punkte jaotatakse vastavalt sellele, mitu liiget on meeskonnas:
