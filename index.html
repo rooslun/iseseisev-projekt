@@ -4,18 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ostunimekiri </title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Ostunimekiri</title>
 </head>
 <body>
-    <div class="wrapper">
-  <div class = "form">
-      <input type="text" name ="itemToAdd" id="itemToAdd" placeholder="LISA TOODE">
-  </div>
-    <div class="list" id="list">
 
-
+    <header>
+        <h1>Pane kokku oma shopinglist!</h1>
+    </header>
+    <form>
+        <input type="text" class="shop-input">
+        <button class="shop-button"type="sumbmit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    </form>
+    <div class="shop-container">
+        <ul class="shop"></ul>
     </div>
-</div>
+
     <script src="skript.js"></script>
 </body>
 </html>
