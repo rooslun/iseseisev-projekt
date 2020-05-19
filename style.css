@@ -41,3 +41,42 @@ form button:hover {
     background: rgb(159, 212, 230);
     color: white;
 }
+
+.shop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shop-list {
+    min-width: 50%;
+    list-style: none;
+} 
+
+.shop {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop li{
+    flex: 1;
+}
+
+.trash-btn, .complete-btn {
+    background: rgb(131, 172, 186);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 10px;
+    opacity: 0.6;
+    transition: 0.4s;
+    border: none;
+    cursor: pointer;
+}
+
+.complete-btn:hover {opacity: 1}

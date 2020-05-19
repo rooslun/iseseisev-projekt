@@ -34,7 +34,7 @@ function addShop(event) {
     shopDiv.appendChild(completedButton);
     // ccheck trash mark button
     const trashButton = document.createElement('Button');
-    trashButton.innerText = 'KUSTUTA';
+    trashButton.innerText = 'X';
 //<i class="fas fa-trash-alt"></i>
     trashButton.classList.add("complete-btn");
     shopDiv.appendChild(trashButton);
