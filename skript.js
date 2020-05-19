@@ -26,4 +26,14 @@ function addTodo(event) {
     // ccheck mark button
     const completedButton = document.createElement("Button");
     completedButton.innterText = '<i class="fas fa-check"></i>'
+    //_____
+    completedButton.classList.add("complete-btn");
+    shopDiv.appendChild(completedButton);
+    // ccheck trash mark button
+    const trasButton = document.createElement("Button");
+    trashButton.innterText = '<i class="fas fa-trash"></i>';
+    trashButton.classList.add("complete-btn");
+    shopDiv.appendChild(trashButton);
+    //APPEND to list
+    shopList.appendChild(trashButton);
 }
