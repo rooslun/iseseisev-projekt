@@ -16,7 +16,7 @@
 https://www.youtube.com/watch?v=Ttf3CEsEwMQ
 
 Kalkulaatori põhi:
-https://www.youtube.com/watch?v=j59qQ7YWLxw&t=1680s
+https://www.youtube.com/watch?v=j59qQ7YWLxw&t=1680s <br />
 Sama videot kasutas Roos-Marie ka kodutöös 3.
 
 ![Alt text](https://github.com/rooslun/iseseisev-projekt/blob/master/Avaleht.png)
