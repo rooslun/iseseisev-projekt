@@ -14,8 +14,10 @@
     <header>
         <h1>Pane kokku oma shopinglist!</h1>
     </header>
+    <hr>
+    <p> Siin veebilehel on sul võimalik planeerida  oma ostunimekirja, arvutada eelarvet ja leida oma päeva quote </p>
     <form>
-        <input type="text" class="shop-input" />
+        <input type="text" class="shop-input" placeholder="Lisa toode"/>
         <button class="shop-button" type="sumbmit">
             <i class="fas fa-plus-square"></i>
         </button>
@@ -31,8 +33,10 @@
         <ul class="shop-list"></ul>
         
     </div>
-
+    
+    
     <div id="calculator-grid" class="calculator-grid">
+        <h2>Arvuta : </h2>
         <div id="output" class="output">
           <div data-previous-operand class="previous-operand"></div>
           <div data-current-operand class="current-operand"></div>
@@ -62,7 +66,16 @@
         <button data-number>.</button>
         <button data-equals>=</button>
       </div>
-      
+      <div id="container" class="container">
+        <h2>Genereeri omale moto-lause</h2>
+        <img src="inspiratsioonlogo.png" alt="inspiratsioon">
+        <button class="btn btn-default" type="submit">Genereeri</button>
+        <div class= "quotes">
+            <span class="quote"></span>
+            <span class="author"></span>
+        </div>
+      </div>
+
     <script src="skript.js"></script>
 </body>
 </html>

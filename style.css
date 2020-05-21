@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(120deg, rgb(159, 212, 230), rgb(213, 253, 253));
+    background-image: linear-gradient(120deg, rgb(165, 214, 231), rgb(222, 248, 248));
     color: white;
     font-family: 'Jost', sans-serif;
     min-height: 100vh;
@@ -25,7 +25,7 @@ header, form {
 
 form input, form button {
     padding: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     background-color: white;
 }
@@ -142,12 +142,13 @@ select{
     align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(5, 90px);
-    grid-template-rows: minmax(120px, auto) repeat(6, 90px);
+    grid-template-rows: minmax(90px, auto) repeat(6, 70px);
+    padding-top: 30rem;
   }
   
   .calculator-grid > button {
     cursor: pointer;
-    font-size: 27px;
+    font-size: 20px;
     border: 1px solid white;
     outline: none;
     background-color: aliceblue;
@@ -186,4 +187,17 @@ select{
     font-size: 2.5rem;
   }
 
+  hr { 
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid rgb(145, 210, 253);
+    margin: 1em 0; padding: 0; 
+}
 
+
+
+
+/* Generaator */
+
+.container {
+    padding-top: 18rem;
+}
