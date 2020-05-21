@@ -21,9 +21,9 @@
         </button>
         <div class="select">
             <select name="shops" class="filter-shop">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="uncompleted">Uncompleted</option>
+                <option value="all">Kõik</option>
+                <option value="completed">Maha tõmmatud</option>
+                <option value="uncompleted">Aktiivne list</option>
             </select>
         </div>
     </form>
@@ -32,6 +32,37 @@
         
     </div>
 
+    <div id="calculator-grid" class="calculator-grid">
+        <div id="output" class="output">
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear class="span-two">KUSTUTA</button>
+        <button data-delete class="span-two">TAGASI</button>
+        <button data-operation>√</button>
+        
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>x</button>
+        <button data-operation>÷</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-operation>π</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-operation>x²</button>
+        <button empty></button>
+        <button data-number>0</button>
+        <button data-operation>e</button>
+        <button data-number>.</button>
+        <button data-equals>=</button>
+      </div>
+      
     <script src="skript.js"></script>
 </body>
 </html>

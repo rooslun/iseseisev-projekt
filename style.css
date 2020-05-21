@@ -109,7 +109,7 @@ select{
 }
 
 select{
-    color: tan;
+    color: rgb(131, 172, 186);
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
@@ -117,7 +117,7 @@ select{
 .select::after{
     content: "\25BC";
     position: absolute;
-    background: tan;
+    background: rgb(159, 212, 230);
     top: 0;
     right: 0;
     padding: 1rem;
@@ -126,7 +126,64 @@ select{
 }
 .select:hover::after{
     background: white;
-    color: tan;
+    color: rgb(159, 212, 230);
 
 
 }
+
+
+
+
+/* KALKULAATOR */
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(5, 90px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 90px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 27px;
+    border: 1px solid white;
+    outline: none;
+    background-color: aliceblue;
+    transition-duration: 0.5s;
+    border-radius: 8px;
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: rgb(204, 230, 253);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: aliceblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 8px;
+  }
+  
+  .output .previous-operand {
+    color: rgba(194, 194, 194, 0.75);
+    font-size: 1.5rem;
+  }
+  
+  .output .current-operand {
+    color: rgb(180, 180, 180);
+    font-size: 2.5rem;
+  }
+
+
