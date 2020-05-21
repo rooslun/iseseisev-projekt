@@ -211,22 +211,20 @@ select{
     outline: none;
     background-color: rgb(222, 248, 248);
     transition-duration: 1s;
-    border-radius: 8px;
-    margin-top: 3rem;
-    
-    
+    border-radius: 8px;    
 }
 
 #btn:hover {
     background-color: rgb(165, 214, 231);
 }
 
-img {
-    margin: auto;
-    text-align: center;
-    padding-left: 39rem;
- 
-}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    padding-top: 5rem;
+  }
 
 #container {
 
