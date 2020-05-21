@@ -79,4 +79,8 @@ form button:hover {
     cursor: pointer;
 }
 
-.complete-btn:hover {opacity: 1}
+.trash-btn, .complete-btn:hover {opacity: 1}
+
+.shop-item {
+    padding: 0rem 0.5rem;
+}

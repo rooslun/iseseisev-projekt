@@ -8,6 +8,7 @@ const shopList = document.querySelector(".shop-list");
 //EVEnt listeners
 
 shopButton.addEventListener("click", addShop);
+shopList.addEventListener('click', deleteCheck);
 
 
 //FUnktsions
@@ -23,7 +24,7 @@ function addShop(event) {
 
     // create LI
     const newShop = document.createElement('li');
-    newShop.innerText = 'hey';
+    newShop.innerText = shopInput.value;
     newShop.classList.add('shop-item');
     shopDiv.appendChild(newShop);
 
@@ -36,8 +37,21 @@ function addShop(event) {
     const trashButton = document.createElement('Button');
     trashButton.innerText = 'X';
 //<i class="fas fa-trash-alt"></i>
-    trashButton.classList.add("complete-btn");
+    trashButton.classList.add("trash-btn");
     shopDiv.appendChild(trashButton);
     //APPEND to list
     shopList.appendChild(shopDiv);
+//  clear todo input value
+    todoInput.value = "";
+}
+
+// kustutamine
+function deleteCheck(e){
+    //console.log(e.target);
+    const item = e.target;
+    //kUSTUTAMINE
+    if(item.classList[0] === 'trash-btn'){
+        const shop = item.parentElement;
+        shop.remove();
+    }
 }
