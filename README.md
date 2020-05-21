@@ -19,4 +19,8 @@ Kalkulaatori põhi:
 https://www.youtube.com/watch?v=j59qQ7YWLxw&t=1680s
 Sama videot kasutas Roos-Marie ka kodutöös 3.
 
+![Alt text](https://github.com/rooslun/iseseisev-projekt/blob/master/Avaleht.png)
 
+![Alt text](https://github.com/rooslun/iseseisev-projekt/blob/master/Kalkulaator.png)
+
+![Alt text](https://github.com/rooslun/iseseisev-projekt/blob/master/ToiduGeneraator.png)
