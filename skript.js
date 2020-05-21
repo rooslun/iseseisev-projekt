@@ -2,6 +2,7 @@
 const shopInput = document.querySelector(".shop-input");
 const shopButton = document.querySelector(".shop-button");
 const shopList = document.querySelector(".shop-list");
+const filterOption = document.querySelector(".filter-shop");
 
 
 
@@ -9,6 +10,7 @@ const shopList = document.querySelector(".shop-list");
 
 shopButton.addEventListener("click", addShop);
 shopList.addEventListener('click', deleteCheck);
+filterOption.addEventListener("click", filterShop);
 
 
 //FUnktsions
@@ -42,7 +44,7 @@ function addShop(event) {
     //APPEND to list
     shopList.appendChild(shopDiv);
 //  clear todo input value
-    todoInput.value = "";
+    shopInput.value = "";
 }
 
 // kustutamine
@@ -53,7 +55,12 @@ function deleteCheck(e){
     // kui vajutab kusuta, siis see kustutab ülesande
     if(item.classList[0] === 'trash-btn'){
         const shop = item.parentElement;
-        shop.remove();
+        shop.classList.add("fall");
+        //animation
+        shop.addEventListener('transitionend', function(){
+            shop.remove();
+        });
+        
     }
     
     // Tõmba maha  ?? ei tööta
@@ -61,4 +68,22 @@ function deleteCheck(e){
         const shop = item.parentElement;
         shop.classList.toggle('completed');
     }
+}
+
+function filterShop(e){
+    const shops = shopList.childNodes;
+    console.log(shops);
+    shops.forEach(function(shop){
+        switch(e.target.value){
+            case "all":
+                shop.style.display = "flex"
+                break;
+            case "completed":
+                if(shop.classList.contains("completed")){
+                    shop.style.display = "flex";
+                }else{
+                    shop.style.display = "none";
+                }
+        }
+    });
 }
