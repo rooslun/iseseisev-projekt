@@ -50,8 +50,15 @@ function deleteCheck(e){
     //console.log(e.target);
     const item = e.target;
     //kUSTUTAMINE
+    // kui vajutab kusuta, siis see kustutab ülesande
     if(item.classList[0] === 'trash-btn'){
         const shop = item.parentElement;
         shop.remove();
+    }
+    
+    // Tõmba maha  ?? ei tööta
+    if(item.classList[0] === "complete-btn"){
+        const shop = item.parentElement;
+        shop.classList.toggle('completed');
     }
 }
