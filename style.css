@@ -199,5 +199,48 @@ select{
 /* Generaator */
 
 .container {
-    padding-top: 18rem;
+    padding-top: 15rem;
+}
+
+img {
+    padding: 25px;
+    padding-left: 27rem;
+}
+#btn{
+    cursor: pointer;
+    font-size: 15px;
+    padding: 12px;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgb(222, 248, 248);
+    transition-duration: 1s;
+    border-radius: 8px;
+    margin-top: 3rem;
+    
+    
+}
+
+#btn:hover {
+    background-color: rgb(165, 214, 231);
+}
+
+img {
+    margin: auto;
+    text-align: center;
+    padding-left: 34rem;
+ 
+}
+
+#container {
+
+    margin: auto;
+    text-align: center;
+}
+
+#qoutput {
+    margin: 25px auto;
+    font-size: 26px;
+    color: rgb(14, 43, 122);
+    font-family: monospace;
+    padding-bottom: 10rem;
 }

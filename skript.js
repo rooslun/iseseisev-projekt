@@ -310,3 +310,19 @@ class Calculator {
     calculator.delete()
     calculator.updateDisplay()
   })
+
+
+
+
+
+  // GENERAATOR
+
+
+  let btn = document.getElementById('btn');
+  let qoutput = document.getElementById('qoutput');
+  let quotes = ["Õun", "Banaan", "Pirn", "Burger", "Pannkoogid", "Jäätis", "Kummikommid", "Pirn", "Kala", "Lihapallid"];
+  
+  btn.addEventListener('click', function(){
+      var randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+      qoutput.innerHTML = randomQuote;
+  })
