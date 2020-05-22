@@ -239,3 +239,49 @@ select{
     font-family: monospace;
     padding-bottom: 10rem;
 }
+
+
+/* Värvi muutmine */
+.disain {
+    padding: 4px;
+    margin: 20px;
+    margin-left: 36px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: aliceblue;
+    transition-duration: 1s;
+    border-radius: 8px;    
+    width:100px;
+    height:auto;
+    display:inline-block;
+}
+
+.disain:hover{
+    background-color: rgb(204, 230, 253);
+}
+
+/* muusika */
+
+
+.music {
+    padding: 4px;
+    margin: 20px;
+    margin-left: 36px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: rgb(218, 238, 255);
+    transition-duration: 1s;
+    border-radius: 8px;    
+    width:150px;
+    height:auto;
+    display:inline-block;
+}
+
+.music:hover{
+    background-color: rgb(204, 230, 253);
+}

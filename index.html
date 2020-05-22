@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./style.css">
     <title>Ostunimekiri</title>
+    
+    <script>
+        // Funktsioon muutmaks tausta värvi
+        function changeBodyBg(color){
+            document.body.style.background = color;
+
+        }       
+    </script>
 </head>
 <body>
 
@@ -74,7 +82,25 @@
           <button id="btn">Genereeri</button>
           <div id="qoutput">Vajuta nuppu et genereerida söök!</div>
       </div>
+      <hr>
+      <br>
+      <section id = "disain">
+        <div>
+            <h3>Disaini rakendust enda maitse järgi : </h3> <br />
+            <button type="button" onclick="changeBodyBg('LightPink');" class="disain">Roosa</button>
+            <button type="button" onclick="changeBodyBg('DarkSeaGreen');" class="disain">Roheline</button>
+            <button type="button" onclick="changeBodyBg('rgb(222, 248, 248)');" class="disain">Sinine</button>
+        </div>
 
+            <div style="width:500px; margin:auto; position:relative;" class="audioContainer">
+            <audio id="mysong" src=mysong controls preload="metadata">
+              <p>Your browser doesn't support html5 audio.</p>
+            </audio></div>
+            <div id="songsList">
+              <button type="button" onclick="Song1()" class="music">Taukar - Kuule</button>
+              <button type="button" onclick="Song2()" class="music">Beautiful Planet -  Meditation</button>
+            </div>
+            
     <script src="skript.js"></script>
 </body>
 </html>
