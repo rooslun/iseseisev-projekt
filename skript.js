@@ -110,7 +110,7 @@ function saveLocalShops(shop){
     }
 
     shops.push(shop);
-    localStorage.setItem('todos', JSON.stringify(shops));
+    localStorage.setItem('shops', JSON.stringify(shops));
 }
 function getShops(){
     let shops;
