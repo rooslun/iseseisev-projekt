@@ -337,18 +337,50 @@ class Calculator {
     document.getElementById('mysong').src = "Beautiful.mp3";
   }
 
-  // Tausta pic
+  // Joonistamine
 
-const IMAGE_URLS = {
-  nature: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80',
-  pencils: 'https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80',
-};
-// Sets the background image
-const setBackground = (image) => {
-  document.body.style.background = "url('"+IMAGE_URLS.[image]+"')";
-};
-if (isWeekend) {
-  setBackground('nature');
-} else {
-  setBackground('pencils');
+  let canvas;
+let ctx;
+
+window.onload = function(){
+	canvas = document.getElementById("canvas");
+	ctx = canvas.getContext("2d");
+	//canvas.addEventListener("click", test);
+	canvas.addEventListener("mousedown", startDrawing);
+	canvas.addEventListener("mouseup", stopDrawing);
+	canvas.addEventListener("mouseout", stopDrawing);
 }
+
+function startDrawing(e) {
+	let x = e.clientX - canvas.offsetLeft +window.scrollX;
+	let y = e.clientY - canvas.offsetTop + window.scrollY;
+	ctx.strokeStyle = document.getElementById("colorPicker").value;
+	ctx.beginPath();
+	ctx.moveTo(x,y);
+	canvas.addEventListener("mousemove", doDrawing);
+}
+
+function doDrawing(e){
+	let x = e.clientX - canvas.offsetLeft +window.scrollX;
+	let y = e.clientY - canvas.offsetTop + window.scrollY;
+	ctx.lineTo(x,y);
+	ctx.stroke();
+}
+
+function stopDrawing(){
+	ctx.closePath();
+	canvas.removeEventListener("mousemove", doDrawing);
+}
+
+function test(e){
+	let x = e.clientX - canvas.offsetLeft +window.scrollX;
+	let y = e.clientY - canvas.offsetTop + window.scrollY;
+	ctx.beginPath();
+		ctx.arc(x, y, 10, 0, 2 * Math.PI);
+		ctx.fill();
+	ctx.closePath();
+}
+
+
+
+
