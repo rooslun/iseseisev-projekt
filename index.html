@@ -75,39 +75,112 @@
         <button data-equals>=</button>
       </div>
       <hr>
+      <br>
+      <br>
+      <h2>Kogu inspiratsiooni mida täna süüa! </h2>
       <img src="generaator.png" alt="toit" class="center">
-    
-
       <div id="container">
           <button id="btn">Genereeri</button>
           <div id="qoutput">Vajuta nuppu et genereerida söök!</div>
       </div>
       <hr>
       <br>
-      <section id = "disain">
-        <div>
-            <h3>Disaini rakendust enda maitse järgi : </h3> <br />
-            <button type="button" onclick="changeBodyBg('LightPink');" class="disain">Roosa</button>
-            <button type="button" onclick="changeBodyBg('DarkSeaGreen');" class="disain">Roheline</button>
-            <button type="button" onclick="changeBodyBg('rgb(222, 248, 248)');" class="disain">Sinine</button>
-        </div>
+   
 
-            <div style="width:500px; margin:auto; position:relative;" class="audioContainer">
-            <audio id="mysong" src=mysong controls preload="metadata">
-              <p>Your browser doesn't support html5 audio.</p>
-            </audio></div>
-            <div id="songsList">
-              <button type="button" onclick="Song1()" class="music">Taukar - Kuule</button>
-              <button type="button" onclick="Song2()" class="music">Beautiful Planet -  Meditation</button>
+            <div id="datetime" >
+                <h1>Täna on:</h1>
+                <div>
+                    <span id="weekday">
+                        Nädalapäev.
+                    </span></br>
+                    <span id="phrase">Kuva quote</span>
+                </div>
+                <br>
+                <br>
+
+                <!-- SLIDE SHOW-->
+            <div class="slideshow-container">
+
+                <!-- Täis laius mööt koos captionitega -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="ice cream.jpg" style="width:100%">
+                <div class="text">Jäätis</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="apples.jpg" style="width:100%">
+                <div class="text">Õunad</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="bananas.jpg" style="width:100%">
+                <div class="text">Banaaniviilud</div>
+                </div>
+
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="meatballs.jpg" style="width:100%">
+                <div class="text">Lihapallid</div>
+                </div>
+
+
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="pancakes.jpeg" style="width:100%">
+                <div class="text">Maitsvad pannkoogid</div>
+                </div>
+
+                
+            
+                <!-- Eelmine ja järgmine nupud -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
-            <hr>
-            <section class="art">
-                <h3> Tee märkmeid: </h3>
-                <canvas id="canvas" width="1000" height="600">Kahjuks teie brauser ei toeta HTML5 canvas elementi</canvas>
-            </section>
-            <br>
-            <input type="color" id="colorPicker">
+            
+            <!-- Täpid nägemaks mitmes pilt hetkel ees -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+
+
+
+
+            
+            <section id = "disain">
+                <div>
+                    <h3>Disaini rakendust enda maitse järgi : </h3> <br />
+                    <button type="button" onclick="changeBodyBg('LightPink');" class="disain">Roosa</button>
+                    <button type="button" onclick="changeBodyBg('DarkSeaGreen');" class="disain">Roheline</button>
+                    <button type="button" onclick="changeBodyBg('rgb(222, 248, 248)');" class="disain">Sinine</button>
+                </div>
+        
+                    <div style="width:500px; margin:auto; position:relative;" class="audioContainer">
+                    <audio id="mysong" src=mysong controls preload="metadata">
+                      <p>Your browser doesn't support html5 audio.</p>
+                    </audio></div>
+                    <div id="songsList">
+                      <button type="button" onclick="Song1()" class="music">Taukar - Kuule</button>
+                      <button type="button" onclick="Song2()" class="music">Beautiful Planet -  Meditation</button>
+                    </div>
+                    <br>
+                    <hr>
+                    <section class="art">
+                        <h3> Tee märkmeid: </h3>
+                        <canvas id="canvas" width="1000" height="600">Kahjuks teie brauser ei toeta HTML5 canvas elementi</canvas>
+                    </section>
+                    <br>
+                    <input type="color" id="colorPicker">
+        
     <script src="skript.js"></script>
 </body>
 </html>
+
+

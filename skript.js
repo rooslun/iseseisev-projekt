@@ -381,6 +381,81 @@ function test(e){
 	ctx.closePath();
 }
 
+//Grab day of the week from local computer
+let date = new Date();
+let dayOfWeekNumber = date.getDay();
+let nameOfDay;
+let quote;
+
+switch(dayOfWeekNumber){
+    case 0: 
+        nameOfDay = 'Pühapäev';
+        quote = 'Pannkoogi hommik!';
+        break;
+    case 1:
+        nameOfDay = 'Esmaspäev';
+        quote = 'Sinine esmaspäev, äkki sööks ainult kummikomme?';
+        break;
+    case 2:
+        nameOfDay = 'Teisipäev';
+        quote = 'Taco Tuesday!';
+        break;
+    case 3:
+        nameOfDay = 'Kolmapäev';
+        quote = 'Kolmapäev on koogi päev...';
+        break;
+    case 4:
+        nameOfDay = 'Neljapäev';
+        quote = 'Söö midagi tervislikku - puuvilju!';
+        break;
+    case 5:
+        nameOfDay = 'Reede';
+        quote = 'Nädalavahetuse alguse puhul ei ütleks ära ühest jäätise kausist!';
+        break;
+    case 6:
+        nameOfDay = 'Laupäev';
+        quote = 'Aeg puhkuseks!! Osta driveinist üks burger kaasa ;)';
+        break;
+
+}
+//kuva päev
+let weekdayDiv = document.getElementById('weekday');
+weekdayDiv.innerHTML = `${nameOfDay}`;
+
+//kuva quote
+let quoteDiv = document.getElementById('phrase');
+quoteDiv.innerHTML = `${quote}`
 
 
+
+
+// slideshow lisamine
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Eelmine( järgmine controls)
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail pilt control
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
 
